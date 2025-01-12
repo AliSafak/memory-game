@@ -34,10 +34,11 @@ function DenemeApp() {
                 {
                     numData.map(x => (
                         <button
-                        key={x.id}
+                            key={x.id}
                             disabled={isDisabled}
                             onClick={() => handleCompare}
-                        >{x.isFound || x.isShow ? x.num : null} </button>
+                        >{x.isFound || x.isShow ? x.num : null}
+                        </button>
                     )
 
                     )
