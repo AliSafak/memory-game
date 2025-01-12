@@ -15,6 +15,7 @@ body {
     line-height: 1.5;
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+    font-family: "Atkinson Hyperlegible";
 }
 
 /* 5. Improve media defaults */
@@ -68,6 +69,11 @@ h6 {
     isolation: isolate;
 }
 
+.container {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -77,19 +83,84 @@ h6 {
 
 .buttonArea {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     padding: 20px;
     justify-self: center;
 }
 
-.numberButton {
-    border-radius: 50%;
-    width: 82px;
-    height: 82px;
-    background-color: green;
-    color: white;
-    .active {
-        background-color: red;
+
+
+.buttonArea {
+    button {
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
     }
+}
+
+.moves-area {
+    text-align: center;
+}
+
+.result-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 24px;
+    margin-inline: 24px;
+    gap: 40px;
+
+    .time-area {
+        padding: 10px 30px;
+        background-color: #DFE7EC;
+        text-align: center;
+        border-radius: 50px;
+        font-size: bold;
+    }
+
+    .moves-area {
+        padding: 10px 30px;
+        background-color: #DFE7EC;
+        text-align: center;
+        border-radius: 50px;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.newgame {
+    border-radius: 25px;
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    background-color: #FDA214;
+    cursor: pointer;
+}
+
+
+.default-btn {
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #304859;
+}
+
+.grey-btn {
+    background-color: #BCCED9;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.orange-btn {
+    background-color: #FDA214;
+    border: none;
+    font-weight: bold;
+    color: white;
 }
